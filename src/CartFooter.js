@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 
 class CartFooter extends React.Component {
 
@@ -11,9 +10,5 @@ class CartFooter extends React.Component {
         )
     }
 }
-
-CartFooter.propTypes = {
-    copyright: PropTypes.string
-};
 
 export default CartFooter;

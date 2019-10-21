@@ -1,9 +1,7 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
 import CartItem from "./CartItem";
 
 class CartItems extends React.Component {
-
     render() {
         return (
             <div className="container">
@@ -16,14 +14,14 @@ class CartItems extends React.Component {
                             <div className="col-md-2">Quantity</div>
                         </div>
                     </div>
-                    {this.props.itemList.map(item => {
+                    {this.props.itemList.map((item, index) => {
                         return (
-                            <CartItem cartItem={item} />
+                            <CartItem cartItem={item} key={index}/>
                         )
                     })}
                 </div>
             </div>
-        )
+        );
     }
 }
 
